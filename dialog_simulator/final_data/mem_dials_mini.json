@@ -1,0 +1,1740 @@
+{
+    "dialogue_data": [
+        {
+            "dialogue": [
+                {
+                    "turn_idx": 0,
+                    "system_transcript": "Here's a photo of them playing soccer on a beautiful day in 2019 at the NY Stadium.",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "Here's a photo of them playing soccer on a beautiful day in 2019 at the NY Stadium.",
+                            "act": "INFORM:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "participant": [
+                                        "Robert",
+                                        "Carl",
+                                        "Helen",
+                                        "Daniel"
+                                    ]
+                                },
+                                "request_slots": [],
+                                "memories": [
+                                    1040328
+                                ]
+                            }
+                        }
+                    ],
+                    "transcript": "I'd like to see pics with Robert, Carl, Helen, and Daniel.",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "I'd like to see pics with Robert, Carl, Helen, and Daniel.",
+                            "act": "REQUEST:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "participant": [
+                                        "Robert",
+                                        "Carl",
+                                        "Helen",
+                                        "Daniel"
+                                    ]
+                                },
+                                "request_slots": [],
+                                "memories": []
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.SEARCH",
+                    "api_call": {
+                        "call_type": "API_CALL_TYPE.SEARCH",
+                        "parameters": {
+                            "slot_values": {
+                                "participant": [
+                                    {
+                                        "name": "Robert",
+                                        "memory_graph_id": 0
+                                    },
+                                    {
+                                        "name": "Carl",
+                                        "memory_graph_id": 1
+                                    },
+                                    {
+                                        "name": "Helen",
+                                        "memory_graph_id": 2
+                                    },
+                                    {
+                                        "name": "Daniel",
+                                        "memory_graph_id": 3
+                                    }
+                                ]
+                            },
+                            "request_slots": {},
+                            "memories": []
+                        }
+                    },
+                    "api_result": {
+                        "status": "API_STATUS.SEARCH_FOUND",
+                        "results": {
+                            "retrieved_memories": [
+                                1040328
+                            ],
+                            "retrieved_info": []
+                        }
+                    }
+                },
+                {
+                    "turn_idx": 1,
+                    "system_transcript": "Here is one of a baseball game and another of surfing, both from Boston Stadium.",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "Here is one of a baseball game and another of surfing, both from Boston Stadium.",
+                            "act": "INFORM:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "location": "Boston Stadium"
+                                },
+                                "request_slots": [],
+                                "memories": [
+                                    1023431,
+                                    1040610
+                                ]
+                            }
+                        }
+                    ],
+                    "transcript": "Do you have any from Boston Stadium?",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "Do you have any from Boston Stadium?",
+                            "act": "REQUEST:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "location": "Boston Stadium"
+                                },
+                                "request_slots": [],
+                                "memories": []
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.SEARCH",
+                    "api_call": {
+                        "call_type": "API_CALL_TYPE.SEARCH",
+                        "parameters": {
+                            "slot_values": {
+                                "location": {
+                                    "gps": {
+                                        "lat": -1,
+                                        "lon": -1
+                                    },
+                                    "geo_tag": {
+                                        "location_id": 81,
+                                        "place": "Boston Stadium",
+                                        "city": "Boston",
+                                        "state": "MA",
+                                        "country": "USA",
+                                        "place_type": "concert"
+                                    },
+                                    "category": [
+                                        "concert"
+                                    ],
+                                    "set": "location_9_1"
+                                }
+                            },
+                            "request_slots": {},
+                            "memories": []
+                        }
+                    },
+                    "api_result": {
+                        "status": "API_STATUS.SEARCH_FOUND",
+                        "results": {
+                            "retrieved_memories": [
+                                1023431,
+                                1040610
+                            ],
+                            "retrieved_info": []
+                        }
+                    }
+                },
+                {
+                    "turn_idx": 2,
+                    "system_transcript": "It was taken December 24, 2020.",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "It was taken December 24, 2020.",
+                            "act": "INFORM:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "[Memory ID: 1023431]": {
+                                        "time": "2020-12-24 18:44:00"
+                                    }
+                                },
+                                "request_slots": [
+                                    "time"
+                                ],
+                                "memories": [
+                                    1023431
+                                ]
+                            }
+                        }
+                    ],
+                    "transcript": "Can you get the date of the baseball photo?",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "Can you get the date of the baseball photo?",
+                            "act": "ASK:GET",
+                            "act_attributes": {
+                                "slot_values": {},
+                                "request_slots": [
+                                    "time"
+                                ],
+                                "memories": [
+                                    1023431
+                                ]
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.GET_INFO",
+                    "api_call": {
+                        "call_type": "API_CALL_TYPE.GET_INFO",
+                        "parameters": {
+                            "slot_values": [],
+                            "request_slots": [
+                                "time"
+                            ],
+                            "memories": [
+                                1023431
+                            ]
+                        }
+                    },
+                    "api_result": {
+                        "status": "API_STATUS.INFO_FOUND",
+                        "results": {
+                            "retrieved_memories": [
+                                1023431
+                            ],
+                            "retrieved_info": {
+                                "[Memory ID: 1023431]": {
+                                    "time": "2020-12-24 18:44:00"
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "dialogue_idx": 2155,
+            "domain": null,
+            "mentioned_memory_ids": [
+                1040328,
+                1040610,
+                1023431
+            ],
+            "memory_graph_id": "OaqfUvyH3jEQ"
+        },
+        {
+            "dialogue": [
+                {
+                    "turn_idx": 0,
+                    "system_transcript": "Here is a photo of Helen catching a wave. I have another photo of Larry surfing as well.",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "Here is a photo of Helen catching a wave. I have another photo of Larry surfing as well.",
+                            "act": "INFORM:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "activity": [
+                                        "surfing water",
+                                        "surfing"
+                                    ]
+                                },
+                                "request_slots": [],
+                                "memories": [
+                                    1021134,
+                                    1024968
+                                ]
+                            }
+                        }
+                    ],
+                    "transcript": "I want to see some photos of people surfing.",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "I want to see some photos of people surfing.",
+                            "act": "REQUEST:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "activity": [
+                                        "surfing water",
+                                        "surfing"
+                                    ]
+                                },
+                                "request_slots": [],
+                                "memories": []
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.SEARCH",
+                    "api_call": {
+                        "call_type": "API_CALL_TYPE.SEARCH",
+                        "parameters": {
+                            "slot_values": {
+                                "activity": [
+                                    {
+                                        "activity_name": "surfing water"
+                                    },
+                                    {
+                                        "activity_name": "surfing"
+                                    }
+                                ]
+                            },
+                            "request_slots": {},
+                            "memories": []
+                        }
+                    },
+                    "api_result": {
+                        "status": "API_STATUS.SEARCH_FOUND",
+                        "results": {
+                            "retrieved_memories": [
+                                1021134,
+                                1024968
+                            ],
+                            "retrieved_info": []
+                        }
+                    }
+                },
+                {
+                    "turn_idx": 1,
+                    "system_transcript": "That photo was taken at Long Beach, in New York, New York.",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "That photo was taken at Long Beach, in New York, New York.",
+                            "act": "INFORM:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "[Memory ID: 1024968]": {
+                                        "location": {
+                                            "location_id": 39,
+                                            "place": "Long Beach",
+                                            "city": "New York",
+                                            "state": "NY",
+                                            "country": "USA",
+                                            "place_type": "beach / ocean"
+                                        }
+                                    }
+                                },
+                                "request_slots": [
+                                    "location"
+                                ],
+                                "memories": [
+                                    1024968
+                                ]
+                            }
+                        }
+                    ],
+                    "transcript": "Where was the photo of Larry taken?",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "Where was the photo of Larry taken?",
+                            "act": "ASK:GET",
+                            "act_attributes": {
+                                "slot_values": {},
+                                "request_slots": [
+                                    "location"
+                                ],
+                                "memories": [
+                                    1024968
+                                ]
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.GET_INFO",
+                    "api_call": {
+                        "call_type": "API_CALL_TYPE.GET_INFO",
+                        "parameters": {
+                            "slot_values": [],
+                            "request_slots": [
+                                "location"
+                            ],
+                            "memories": [
+                                1024968
+                            ]
+                        }
+                    },
+                    "api_result": {
+                        "status": "API_STATUS.INFO_FOUND",
+                        "results": {
+                            "retrieved_memories": [
+                                1024968
+                            ],
+                            "retrieved_info": {
+                                "[Memory ID: 1024968]": {
+                                    "location": {
+                                        "location_id": 39,
+                                        "place": "Long Beach",
+                                        "city": "New York",
+                                        "state": "NY",
+                                        "country": "USA",
+                                        "place_type": "beach / ocean"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "turn_idx": 2,
+                    "system_transcript": "Sorry, I don't have anything quite that specific.",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "Sorry, I don't have anything quite that specific.",
+                            "act": "INFORM:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "activity": [
+                                        "skiing crosscountry"
+                                    ],
+                                    "location": "212 Local Farm"
+                                },
+                                "request_slots": [],
+                                "memories": []
+                            }
+                        }
+                    ],
+                    "transcript": "I would also like to see photos of cross country skiing at 212 Local Farm.",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "I would also like to see photos of cross country skiing at 212 Local Farm.",
+                            "act": "REQUEST:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "activity": [
+                                        "skiing crosscountry"
+                                    ],
+                                    "location": "212 Local Farm"
+                                },
+                                "request_slots": [],
+                                "memories": []
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.SEARCH",
+                    "api_call": {
+                        "call_type": "API_CALL_TYPE.SEARCH",
+                        "parameters": {
+                            "slot_values": {
+                                "activity": [
+                                    {
+                                        "activity_name": "skiing crosscountry"
+                                    }
+                                ],
+                                "location": {
+                                    "gps": {
+                                        "lat": -1,
+                                        "lon": -1
+                                    },
+                                    "geo_tag": {
+                                        "location_id": 27,
+                                        "place": "212 Local Farm",
+                                        "city": "Bay Area",
+                                        "state": "CA",
+                                        "country": "USA",
+                                        "place_type": "farm"
+                                    },
+                                    "category": [
+                                        "farm"
+                                    ],
+                                    "set": "location_4_1"
+                                }
+                            },
+                            "request_slots": {},
+                            "memories": []
+                        }
+                    },
+                    "api_result": {
+                        "status": "API_STATUS.SEARCH_NOT_FOUND",
+                        "results": {
+                            "retrieved_memories": [],
+                            "retrieved_info": []
+                        }
+                    }
+                },
+                {
+                    "turn_idx": 3,
+                    "system_transcript": "Here is a photo of Victoria cooking some sausages at home.",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "Here is a photo of Victoria cooking some sausages at home.",
+                            "act": "INFORM:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "time": "2020-07"
+                                },
+                                "request_slots": [],
+                                "memories": [
+                                    1021787
+                                ]
+                            }
+                        }
+                    ],
+                    "transcript": "Show me photos from July of 2020.",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "Show me photos from July of 2020.",
+                            "act": "REQUEST:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "time": "2020-07"
+                                },
+                                "request_slots": [],
+                                "memories": []
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.SEARCH",
+                    "api_call": {
+                        "call_type": "API_CALL_TYPE.SEARCH",
+                        "parameters": {
+                            "slot_values": {
+                                "time": "2020-07"
+                            },
+                            "request_slots": {},
+                            "memories": []
+                        }
+                    },
+                    "api_result": {
+                        "status": "API_STATUS.SEARCH_FOUND",
+                        "results": {
+                            "retrieved_memories": [
+                                1021787
+                            ],
+                            "retrieved_info": []
+                        }
+                    }
+                },
+                {
+                    "turn_idx": 4,
+                    "system_transcript": "Of course, here they are.",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "Of course, here they are.",
+                            "act": "CONFIRM:SHARE",
+                            "act_attributes": {
+                                "slot_values": {},
+                                "request_slots": [],
+                                "memories": [
+                                    1024968,
+                                    1021134
+                                ]
+                            }
+                        }
+                    ],
+                    "transcript": "Will you go back and share the two surfing photos please?",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "Will you go back and share the two surfing photos please?",
+                            "act": "REQUEST:SHARE",
+                            "act_attributes": {
+                                "slot_values": {},
+                                "request_slots": [],
+                                "memories": [
+                                    1024968,
+                                    1021134
+                                ]
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.SHARE",
+                    "api_call": {
+                        "call_type": "API_CALL_TYPE.SHARE",
+                        "parameters": {
+                            "slot_values": [],
+                            "request_slots": {},
+                            "memories": [
+                                1024968,
+                                1021134
+                            ]
+                        }
+                    },
+                    "api_result": {
+                        "status": "API_STATUS.SHARED",
+                        "results": {
+                            "retrieved_memories": [
+                                1024968,
+                                1021134
+                            ],
+                            "retrieved_info": []
+                        }
+                    }
+                }
+            ],
+            "dialogue_idx": 4083,
+            "domain": null,
+            "mentioned_memory_ids": [
+                1024968,
+                1021787,
+                1021134
+            ],
+            "memory_graph_id": "Ysbgr3kRmf1C"
+        },
+        {
+            "dialogue": [
+                {
+                    "turn_idx": 0,
+                    "system_transcript": "Here is one photo from 24-hour Diner and a second photo from there",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "Here is one photo from 24-hour Diner and a second photo from there",
+                            "act": "INFORM:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "location": "24-hour Diner"
+                                },
+                                "request_slots": [],
+                                "memories": [
+                                    1025248,
+                                    1035119
+                                ]
+                            }
+                        }
+                    ],
+                    "transcript": "I want to see photos from 24-hour Diner",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "I want to see photos from 24-hour Diner",
+                            "act": "REQUEST:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "location": "24-hour Diner"
+                                },
+                                "request_slots": [],
+                                "memories": []
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.SEARCH",
+                    "api_call": {
+                        "call_type": "API_CALL_TYPE.SEARCH",
+                        "parameters": {
+                            "slot_values": {
+                                "location": {
+                                    "gps": {
+                                        "lat": -1,
+                                        "lon": -1
+                                    },
+                                    "geo_tag": {
+                                        "location_id": 17,
+                                        "place": "24-hour Diner",
+                                        "city": "Boston",
+                                        "state": "WA",
+                                        "country": "USA",
+                                        "place_type": "restaurant"
+                                    },
+                                    "category": [
+                                        "restaurant",
+                                        "home"
+                                    ],
+                                    "set": "location_4_4"
+                                }
+                            },
+                            "request_slots": {},
+                            "memories": []
+                        }
+                    },
+                    "api_result": {
+                        "status": "API_STATUS.SEARCH_FOUND",
+                        "results": {
+                            "retrieved_memories": [
+                                1025248,
+                                1035119
+                            ],
+                            "retrieved_info": []
+                        }
+                    }
+                },
+                {
+                    "turn_idx": 1,
+                    "system_transcript": "This photo was taken in Boston Washington at 24-hour Diner. It was taken on June 26th, 2020.",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "This photo was taken in Boston Washington at 24-hour Diner. It was taken on June 26th, 2020.",
+                            "act": "INFORM:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "[Memory ID: 1035119]": {
+                                        "time": "2020-06-26 07:48:00",
+                                        "location": {
+                                            "location_id": 17,
+                                            "place": "24-hour Diner",
+                                            "city": "Boston",
+                                            "state": "WA",
+                                            "country": "USA",
+                                            "place_type": "restaurant"
+                                        }
+                                    }
+                                },
+                                "request_slots": [
+                                    "time",
+                                    "location"
+                                ],
+                                "memories": [
+                                    1035119
+                                ]
+                            }
+                        }
+                    ],
+                    "transcript": "Would you give me more information about the second photo",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "Would you give me more information about the second photo",
+                            "act": "ASK:GET",
+                            "act_attributes": {
+                                "slot_values": {},
+                                "request_slots": [
+                                    "time",
+                                    "location"
+                                ],
+                                "memories": [
+                                    1035119
+                                ]
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.GET_INFO",
+                    "api_call": {
+                        "call_type": "API_CALL_TYPE.GET_INFO",
+                        "parameters": {
+                            "slot_values": [],
+                            "request_slots": [
+                                "time",
+                                "location"
+                            ],
+                            "memories": [
+                                1035119
+                            ]
+                        }
+                    },
+                    "api_result": {
+                        "status": "API_STATUS.INFO_FOUND",
+                        "results": {
+                            "retrieved_memories": [
+                                1035119
+                            ],
+                            "retrieved_info": {
+                                "[Memory ID: 1035119]": {
+                                    "time": "2020-06-26 07:48:00",
+                                    "location": {
+                                        "location_id": 17,
+                                        "place": "24-hour Diner",
+                                        "city": "Boston",
+                                        "state": "WA",
+                                        "country": "USA",
+                                        "place_type": "restaurant"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "turn_idx": 2,
+                    "system_transcript": "It was taken in Boston Washington",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "It was taken in Boston Washington",
+                            "act": "INFORM:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "[Memory ID: 1035119]": {
+                                        "location": {
+                                            "location_id": 17,
+                                            "place": "24-hour Diner",
+                                            "city": "Boston",
+                                            "state": "WA",
+                                            "country": "USA",
+                                            "place_type": "restaurant"
+                                        }
+                                    }
+                                },
+                                "request_slots": [
+                                    "location"
+                                ],
+                                "memories": [
+                                    1035119
+                                ]
+                            }
+                        }
+                    ],
+                    "transcript": "It was taken in Boston, Washington",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "It was taken in Boston, Washington",
+                            "act": "ASK:GET",
+                            "act_attributes": {
+                                "slot_values": {},
+                                "request_slots": [
+                                    "location"
+                                ],
+                                "memories": [
+                                    1035119
+                                ]
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.GET_INFO",
+                    "api_call": {
+                        "call_type": "API_CALL_TYPE.GET_INFO",
+                        "parameters": {
+                            "slot_values": [],
+                            "request_slots": [
+                                "location"
+                            ],
+                            "memories": [
+                                1035119
+                            ]
+                        }
+                    },
+                    "api_result": {
+                        "status": "API_STATUS.INFO_FOUND",
+                        "results": {
+                            "retrieved_memories": [
+                                1035119
+                            ],
+                            "retrieved_info": {
+                                "[Memory ID: 1035119]": {
+                                    "location": {
+                                        "location_id": 17,
+                                        "place": "24-hour Diner",
+                                        "city": "Boston",
+                                        "state": "WA",
+                                        "country": "USA",
+                                        "place_type": "restaurant"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "dialogue_idx": 4160,
+            "domain": null,
+            "mentioned_memory_ids": [
+                1025248,
+                1035119
+            ],
+            "memory_graph_id": "tk6RT8aQ0ehV"
+        },
+        {
+            "dialogue": [
+                {
+                    "turn_idx": 0,
+                    "system_transcript": "There is one photo of Jerry and Helen riding horses.",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "There is one photo of Jerry and Helen riding horses.",
+                            "act": "INFORM:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "time": "2021"
+                                },
+                                "request_slots": [],
+                                "memories": [
+                                    1005280
+                                ]
+                            }
+                        }
+                    ],
+                    "transcript": "I'd like to see photos from 2021.",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "I'd like to see photos from 2021.",
+                            "act": "REQUEST:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "time": "2021"
+                                },
+                                "request_slots": [],
+                                "memories": []
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.SEARCH",
+                    "api_call": {
+                        "call_type": "API_CALL_TYPE.SEARCH",
+                        "parameters": {
+                            "slot_values": {
+                                "time": "2021"
+                            },
+                            "request_slots": {},
+                            "memories": []
+                        }
+                    },
+                    "api_result": {
+                        "status": "API_STATUS.SEARCH_FOUND",
+                        "results": {
+                            "retrieved_memories": [
+                                1005280
+                            ],
+                            "retrieved_info": []
+                        }
+                    }
+                },
+                {
+                    "turn_idx": 1,
+                    "system_transcript": "They were riding horses at Country Farm, New York, New York, USA",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "They were riding horses at Country Farm, New York, New York, USA",
+                            "act": "INFORM:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "[Memory ID: 1005280]": {
+                                        "location": {
+                                            "location_id": 25,
+                                            "place": "Country Farm",
+                                            "city": "New York",
+                                            "state": "NY",
+                                            "country": "USA",
+                                            "place_type": "farm"
+                                        }
+                                    }
+                                },
+                                "request_slots": [
+                                    "location"
+                                ],
+                                "memories": [
+                                    1005280
+                                ]
+                            }
+                        }
+                    ],
+                    "transcript": "Where were they riding the horses?",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "Where were they riding the horses?",
+                            "act": "ASK:GET",
+                            "act_attributes": {
+                                "slot_values": {},
+                                "request_slots": [
+                                    "location"
+                                ],
+                                "memories": [
+                                    1005280
+                                ]
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.GET_INFO",
+                    "api_call": {
+                        "call_type": "API_CALL_TYPE.GET_INFO",
+                        "parameters": {
+                            "slot_values": [],
+                            "request_slots": [
+                                "location"
+                            ],
+                            "memories": [
+                                1005280
+                            ]
+                        }
+                    },
+                    "api_result": {
+                        "status": "API_STATUS.INFO_FOUND",
+                        "results": {
+                            "retrieved_memories": [
+                                1005280
+                            ],
+                            "retrieved_info": {
+                                "[Memory ID: 1005280]": {
+                                    "location": {
+                                        "location_id": 25,
+                                        "place": "Country Farm",
+                                        "city": "New York",
+                                        "state": "NY",
+                                        "country": "USA",
+                                        "place_type": "farm"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "turn_idx": 2,
+                    "system_transcript": "I tried to find related photos with no luck.",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "I tried to find related photos with no luck.",
+                            "act": "INFORM:GET",
+                            "act_attributes": {
+                                "slot_values": {},
+                                "request_slots": [],
+                                "memories": []
+                            }
+                        }
+                    ],
+                    "transcript": "Can you show me others photo that are related but surfing?",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "Can you show me others photo that are related but surfing?",
+                            "act": "INFORM:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "activity": [
+                                        "surfing water",
+                                        "surfing"
+                                    ]
+                                },
+                                "request_slots": [],
+                                "memories": [
+                                    1005280
+                                ]
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.GET_RELATED",
+                    "api_call": {
+                        "call_type": "API_CALL_TYPE.GET_RELATED",
+                        "parameters": {
+                            "slot_values": {
+                                "activity": [
+                                    {
+                                        "activity_name": "surfing water"
+                                    },
+                                    {
+                                        "activity_name": "surfing"
+                                    }
+                                ],
+                                "location": {
+                                    "gps": {
+                                        "lat": -1,
+                                        "lon": -1
+                                    },
+                                    "geo_tag": {
+                                        "location_id": 25,
+                                        "place": "Country Farm",
+                                        "city": "New York",
+                                        "state": "NY",
+                                        "country": "USA",
+                                        "place_type": "farm"
+                                    },
+                                    "category": [
+                                        "farm"
+                                    ],
+                                    "set": "location_2_0"
+                                }
+                            },
+                            "request_slots": [],
+                            "memories": [
+                                1005280
+                            ]
+                        }
+                    },
+                    "api_result": {
+                        "status": "API_STATUS.SEARCH_NOT_FOUND",
+                        "results": {
+                            "retrieved_memories": [],
+                            "retrieved_info": []
+                        }
+                    }
+                },
+                {
+                    "turn_idx": 3,
+                    "system_transcript": "I found a photo with Jerry, Kennth, Victoria, and Helen skiing.",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "I found a photo with Jerry, Kennth, Victoria, and Helen skiing.",
+                            "act": "INFORM:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "participant": [
+                                        "Kenneth",
+                                        "Victoria",
+                                        "Helen"
+                                    ]
+                                },
+                                "request_slots": [],
+                                "memories": [
+                                    1027000
+                                ]
+                            }
+                        }
+                    ],
+                    "transcript": "Search for photos with Kenneth, Victoria, and Helen",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "Search for photos with Kenneth, Victoria, and Helen",
+                            "act": "REQUEST:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "participant": [
+                                        "Kenneth",
+                                        "Victoria",
+                                        "Helen"
+                                    ]
+                                },
+                                "request_slots": [],
+                                "memories": []
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.SEARCH",
+                    "api_call": {
+                        "call_type": "API_CALL_TYPE.SEARCH",
+                        "parameters": {
+                            "slot_values": {
+                                "participant": [
+                                    {
+                                        "name": "Kenneth",
+                                        "memory_graph_id": 0
+                                    },
+                                    {
+                                        "name": "Victoria",
+                                        "memory_graph_id": 1
+                                    },
+                                    {
+                                        "name": "Helen",
+                                        "memory_graph_id": 2
+                                    }
+                                ]
+                            },
+                            "request_slots": {},
+                            "memories": []
+                        }
+                    },
+                    "api_result": {
+                        "status": "API_STATUS.SEARCH_FOUND",
+                        "results": {
+                            "retrieved_memories": [
+                                1027000
+                            ],
+                            "retrieved_info": []
+                        }
+                    }
+                },
+                {
+                    "turn_idx": 4,
+                    "system_transcript": "What photo are you referring to?",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "What photo are you referring to?",
+                            "act": "REQUEST:DISAMBIGUATE",
+                            "act_attributes": {
+                                "slot_values": {},
+                                "request_slots": [],
+                                "memories": []
+                            }
+                        }
+                    ],
+                    "transcript": "What time was it?",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "What time was it?",
+                            "act": "ASK:GET",
+                            "act_attributes": {
+                                "slot_values": {},
+                                "request_slots": [
+                                    "time"
+                                ],
+                                "memories": [
+                                    1027000
+                                ]
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.GET_INFO",
+                    "api_call": {
+                        "call_type": "None",
+                        "parameters": {}
+                    },
+                    "api_result": {
+                        "status": "None",
+                        "results": {
+                            "retrieved_memories": [],
+                            "retrieved_info": []
+                        }
+                    }
+                },
+                {
+                    "turn_idx": 5,
+                    "system_transcript": "Yes, it was  in the afternoon at 5:30 .",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "Yes, it was  in the afternoon at 5:30 .",
+                            "act": "INFORM:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "[Memory ID: 1027000]": {
+                                        "time": "2019-06-14 17:30:00"
+                                    }
+                                },
+                                "request_slots": [
+                                    "time"
+                                ],
+                                "memories": [
+                                    1027000
+                                ]
+                            }
+                        }
+                    ],
+                    "transcript": "The photo of skiing.",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "The photo of skiing.",
+                            "act": "INFORM:DISAMBIGUATE",
+                            "act_attributes": {
+                                "slot_values": {},
+                                "request_slots": [
+                                    "time"
+                                ],
+                                "memories": [
+                                    1027000
+                                ]
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.GET_INFO",
+                    "api_call": {
+                        "call_type": "API_CALL_TYPE.GET_INFO",
+                        "parameters": {
+                            "slot_values": [],
+                            "request_slots": [
+                                "time"
+                            ],
+                            "memories": [
+                                1027000
+                            ]
+                        }
+                    },
+                    "api_result": {
+                        "status": "API_STATUS.INFO_FOUND",
+                        "results": {
+                            "retrieved_memories": [
+                                1027000
+                            ],
+                            "retrieved_info": {
+                                "[Memory ID: 1027000]": {
+                                    "time": "2019-06-14 17:30:00"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "turn_idx": 6,
+                    "system_transcript": "Of course.",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "Of course.",
+                            "act": "CONFIRM:SHARE",
+                            "act_attributes": {
+                                "slot_values": {},
+                                "request_slots": [],
+                                "memories": [
+                                    1027000
+                                ]
+                            }
+                        }
+                    ],
+                    "transcript": "I'd like you to share that photo.",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "I'd like you to share that photo.",
+                            "act": "REQUEST:SHARE",
+                            "act_attributes": {
+                                "slot_values": {},
+                                "request_slots": [],
+                                "memories": [
+                                    1027000
+                                ]
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.SHARE",
+                    "api_call": {
+                        "call_type": "API_CALL_TYPE.SHARE",
+                        "parameters": {
+                            "slot_values": [],
+                            "request_slots": {},
+                            "memories": [
+                                1027000
+                            ]
+                        }
+                    },
+                    "api_result": {
+                        "status": "API_STATUS.SHARED",
+                        "results": {
+                            "retrieved_memories": [
+                                1027000
+                            ],
+                            "retrieved_info": []
+                        }
+                    }
+                }
+            ],
+            "dialogue_idx": 4228,
+            "domain": null,
+            "mentioned_memory_ids": [
+                1005280,
+                1027000
+            ],
+            "memory_graph_id": "Ysbgr3kRmf1C"
+        },
+        {
+            "dialogue": [
+                {
+                    "turn_idx": 0,
+                    "system_transcript": "Could out these two photos. The first is Jason reading a book. The second photo is Olivia riding a bike.",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "Could out these two photos. The first is Jason reading a book. The second photo is Olivia riding a bike.",
+                            "act": "INFORM:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "time": "2021"
+                                },
+                                "request_slots": [],
+                                "memories": [
+                                    1039404,
+                                    1010803
+                                ]
+                            }
+                        }
+                    ],
+                    "transcript": "Hi. Show me photos from 2021",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "Hi. Show me photos from 2021",
+                            "act": "REQUEST:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "time": "2021"
+                                },
+                                "request_slots": [],
+                                "memories": []
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.SEARCH",
+                    "api_call": {
+                        "call_type": "API_CALL_TYPE.SEARCH",
+                        "parameters": {
+                            "slot_values": {
+                                "time": "2021"
+                            },
+                            "request_slots": {},
+                            "memories": []
+                        }
+                    },
+                    "api_result": {
+                        "status": "API_STATUS.SEARCH_FOUND",
+                        "results": {
+                            "retrieved_memories": [
+                                1039404,
+                                1010803
+                            ],
+                            "retrieved_info": []
+                        }
+                    }
+                },
+                {
+                    "turn_idx": 1,
+                    "system_transcript": "Here are two photos. The first is a photo of Judy standing near bananas in daylight. The second is Judy standing on snow with ski poles in their hands at night.",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "Here are two photos. The first is a photo of Judy standing near bananas in daylight. The second is Judy standing on snow with ski poles in their hands at night.",
+                            "act": "INFORM:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "participant": [
+                                        "Judy"
+                                    ]
+                                },
+                                "request_slots": [],
+                                "memories": [
+                                    1021815,
+                                    1029421
+                                ]
+                            }
+                        }
+                    ],
+                    "transcript": "I'd prefer to see photos with Judy",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "I'd prefer to see photos with Judy",
+                            "act": "REQUEST:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "participant": [
+                                        "Judy"
+                                    ]
+                                },
+                                "request_slots": [],
+                                "memories": []
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.SEARCH",
+                    "api_call": {
+                        "call_type": "API_CALL_TYPE.SEARCH",
+                        "parameters": {
+                            "slot_values": {
+                                "participant": [
+                                    {
+                                        "name": "Judy",
+                                        "memory_graph_id": 0
+                                    }
+                                ]
+                            },
+                            "request_slots": {},
+                            "memories": []
+                        }
+                    },
+                    "api_result": {
+                        "status": "API_STATUS.SEARCH_FOUND",
+                        "results": {
+                            "retrieved_memories": [
+                                1021815,
+                                1029421
+                            ],
+                            "retrieved_info": []
+                        }
+                    }
+                },
+                {
+                    "turn_idx": 2,
+                    "system_transcript": "Here is a snowboarding photo taken at Mount Diablo. It is from January 2020",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "Here is a snowboarding photo taken at Mount Diablo. It is from January 2020",
+                            "act": "INFORM:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "location": "Mount Diablo"
+                                },
+                                "request_slots": [],
+                                "memories": [
+                                    1039749
+                                ]
+                            }
+                        }
+                    ],
+                    "transcript": "Do I see any photos from Mount Diablo",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "Do I see any photos from Mount Diablo",
+                            "act": "INFORM:REFINE",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "location": "Mount Diablo"
+                                },
+                                "request_slots": [],
+                                "memories": []
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.REFINE_SEARCH",
+                    "api_call": {
+                        "call_type": "API_CALL_TYPE.REFINE_SEARCH",
+                        "parameters": {
+                            "slot_values": {
+                                "location": {
+                                    "gps": {
+                                        "lat": -1,
+                                        "lon": -1
+                                    },
+                                    "geo_tag": {
+                                        "location_id": 32,
+                                        "place": "Mount Diablo",
+                                        "city": "Bay Area",
+                                        "state": "CA",
+                                        "country": "USA",
+                                        "place_type": "ski resort"
+                                    },
+                                    "category": [
+                                        "ski resort"
+                                    ],
+                                    "set": "location_5_4"
+                                },
+                                "participant": [
+                                    {
+                                        "name": "Judy",
+                                        "memory_graph_id": 0
+                                    }
+                                ]
+                            },
+                            "request_slots": {},
+                            "memories": []
+                        }
+                    },
+                    "api_result": {
+                        "status": "API_STATUS.SEARCH_FOUND",
+                        "results": {
+                            "retrieved_memories": [
+                                1039749
+                            ],
+                            "retrieved_info": []
+                        }
+                    }
+                },
+                {
+                    "turn_idx": 3,
+                    "system_transcript": "Which photo do you mean",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "Which photo do you mean",
+                            "act": "REQUEST:DISAMBIGUATE",
+                            "act_attributes": {
+                                "slot_values": {},
+                                "request_slots": [],
+                                "memories": []
+                            }
+                        }
+                    ],
+                    "transcript": "Where is Mount Diablo",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "Where is Mount Diablo",
+                            "act": "ASK:GET",
+                            "act_attributes": {
+                                "slot_values": {},
+                                "request_slots": [
+                                    "location"
+                                ],
+                                "memories": [
+                                    1039749
+                                ]
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.GET_INFO",
+                    "api_call": {
+                        "call_type": "None",
+                        "parameters": {}
+                    },
+                    "api_result": {
+                        "status": "None",
+                        "results": {
+                            "retrieved_memories": [],
+                            "retrieved_info": []
+                        }
+                    }
+                },
+                {
+                    "turn_idx": 4,
+                    "system_transcript": "It was taken at Mount Diablo which is near Bay Area California",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "It was taken at Mount Diablo which is near Bay Area California",
+                            "act": "INFORM:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "[Memory ID: 1039749]": {
+                                        "location": {
+                                            "location_id": 32,
+                                            "place": "Mount Diablo",
+                                            "city": "Bay Area",
+                                            "state": "CA",
+                                            "country": "USA",
+                                            "place_type": "ski resort"
+                                        }
+                                    }
+                                },
+                                "request_slots": [
+                                    "location"
+                                ],
+                                "memories": [
+                                    1039749
+                                ]
+                            }
+                        }
+                    ],
+                    "transcript": "I mean the snowboarding photo",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "I mean the snowboarding photo",
+                            "act": "INFORM:DISAMBIGUATE",
+                            "act_attributes": {
+                                "slot_values": {},
+                                "request_slots": [
+                                    "location"
+                                ],
+                                "memories": [
+                                    1039749
+                                ]
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.GET_INFO",
+                    "api_call": {
+                        "call_type": "API_CALL_TYPE.GET_INFO",
+                        "parameters": {
+                            "slot_values": [],
+                            "request_slots": [
+                                "location"
+                            ],
+                            "memories": [
+                                1039749
+                            ]
+                        }
+                    },
+                    "api_result": {
+                        "status": "API_STATUS.INFO_FOUND",
+                        "results": {
+                            "retrieved_memories": [
+                                1039749
+                            ],
+                            "retrieved_info": {
+                                "[Memory ID: 1039749]": {
+                                    "location": {
+                                        "location_id": 32,
+                                        "place": "Mount Diablo",
+                                        "city": "Bay Area",
+                                        "state": "CA",
+                                        "country": "USA",
+                                        "place_type": "ski resort"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "turn_idx": 5,
+                    "system_transcript": "Here is a sandwich photo from 2021",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "Here is a sandwich photo from 2021",
+                            "act": "INFORM:GET",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "time": "2021",
+                                    "activity": [
+                                        "making a sandwich",
+                                        "making a sandwich"
+                                    ]
+                                },
+                                "request_slots": [],
+                                "memories": [
+                                    1012267
+                                ]
+                            }
+                        }
+                    ],
+                    "transcript": "Do I have any sandwich making photos from 2021",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "Do I have any sandwich making photos from 2021",
+                            "act": "INFORM:REFINE",
+                            "act_attributes": {
+                                "slot_values": {
+                                    "time": "2021",
+                                    "activity": [
+                                        "making a sandwich",
+                                        "making a sandwich"
+                                    ]
+                                },
+                                "request_slots": [],
+                                "memories": []
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.REFINE_SEARCH",
+                    "api_call": {
+                        "call_type": "API_CALL_TYPE.REFINE_SEARCH",
+                        "parameters": {
+                            "slot_values": {
+                                "time": "2021",
+                                "activity": [
+                                    {
+                                        "activity_name": "making a sandwich"
+                                    },
+                                    {
+                                        "activity_name": "making a sandwich"
+                                    }
+                                ],
+                                "participant": [
+                                    {
+                                        "name": "Judy",
+                                        "memory_graph_id": 0
+                                    }
+                                ]
+                            },
+                            "request_slots": {},
+                            "memories": []
+                        }
+                    },
+                    "api_result": {
+                        "status": "API_STATUS.SEARCH_FOUND",
+                        "results": {
+                            "retrieved_memories": [
+                                1012267
+                            ],
+                            "retrieved_info": []
+                        }
+                    }
+                },
+                {
+                    "turn_idx": 6,
+                    "system_transcript": "You got it. I will share it.",
+                    "system_transcript_annotated": [
+                        {
+                            "uttr": "You got it. I will share it.",
+                            "act": "CONFIRM:SHARE",
+                            "act_attributes": {
+                                "slot_values": {},
+                                "request_slots": [],
+                                "memories": [
+                                    1012267
+                                ]
+                            }
+                        }
+                    ],
+                    "transcript": "I like this sandwich photo with the smoothie . Go ahead and share it",
+                    "transcript_annotated": [
+                        {
+                            "uttr": "I like this sandwich photo with the smoothie . Go ahead and share it",
+                            "act": "REQUEST:SHARE",
+                            "act_attributes": {
+                                "slot_values": {},
+                                "request_slots": [],
+                                "memories": [
+                                    1012267
+                                ]
+                            }
+                        }
+                    ],
+                    "goal_type": "GoalType.SHARE",
+                    "api_call": {
+                        "call_type": "API_CALL_TYPE.SHARE",
+                        "parameters": {
+                            "slot_values": [],
+                            "request_slots": {},
+                            "memories": [
+                                1012267
+                            ]
+                        }
+                    },
+                    "api_result": {
+                        "status": "API_STATUS.SHARED",
+                        "results": {
+                            "retrieved_memories": [
+                                1012267
+                            ],
+                            "retrieved_info": []
+                        }
+                    }
+                }
+            ],
+            "dialogue_idx": 7640,
+            "domain": null,
+            "mentioned_memory_ids": [
+                1039749,
+                1012267,
+                1039404,
+                1029421,
+                1010803,
+                1021815
+            ],
+            "memory_graph_id": "BrmHzh4a6I5b"
+        }
+    ],
+    "split": "mini",
+    "year": 2021,
+    "domain": "memory"
+}

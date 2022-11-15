@@ -1,0 +1,6 @@
+data/memory_may21_v1_100graphs.json filter=lfs diff=lfs merge=lfs -text
+data/mscoco_memory_graphs_1k.json filter=lfs diff=lfs merge=lfs -text
+data/mem_dials_merged.json filter=lfs diff=lfs merge=lfs -text
+data/mem_dials_test.json filter=lfs diff=lfs merge=lfs -text
+data/mem_dials_train.json filter=lfs diff=lfs merge=lfs -text
+data/mem_dials_val.json filter=lfs diff=lfs merge=lfs -text

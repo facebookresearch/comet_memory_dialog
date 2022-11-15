@@ -1,0 +1,176 @@
+{
+   "memory_graph_id":0,
+   "memories":[
+      {
+         "memory_id":0,
+         "time":"2021-04-10 10:00:00",
+         "start_time":"2021-04-10 10:00:00",
+         "end_time":"2021-04-10 10:30:00",
+         "narrations":"fun day for skiing.",
+         "media":[
+            {
+               "media_id":1000,
+               "type":"video"
+            }
+         ],
+         "location":{
+            "gps":{
+               "lat":40.00,
+               "lon":100.00
+            },
+            "geo_tag":{
+               "place":"Summit at Snoqualmie",
+               "city":"Seattle",
+               "state":"Washington",
+               "country":"USA"
+            }
+         },
+         "participant":[
+            {
+               "name":"John",
+               "memory_graph_id":1
+            },
+            {
+               "name":"Mary",
+               "memory_graph_id":2
+            }
+         ],
+         "activity":[
+            {
+               "activity_name":"skiing"
+            }
+         ],
+         "object":[
+            
+         ]
+      },
+      {
+         "memory_id":1,
+         "time":"2021-03-10 10:00:00",
+         "start_time":"2021-03-10 10:00:00",
+         "end_time":"2021-03-10 10:30:00",
+         "narrations":"fun baseball day.",
+         "media":[
+            {
+               "media_id":1001,
+               "type":"video"
+            }
+         ],
+         "location":{
+            "gps":{
+               "lat":41.00,
+               "lon":110.00
+            },
+            "geo_tag":{
+               "place":"T-Mobile Park",
+               "city":"Seattle",
+               "state":"Washington",
+               "country":"USA"
+            }
+         },
+         "participant":[
+            {
+               "name":"Mary",
+               "memory_graph_id":2
+            },
+            {
+               "name":"Jane",
+               "memory_graph_id":3
+            }
+         ],
+         "activity":[
+            {
+               "activity_name":"baseball"
+            }
+         ],
+         "object":[
+            
+         ]
+      },
+      {
+         "memory_id":3,
+         "time":"2020-03-10 10:00:00",
+         "start_time":"2020-03-10 10:00:00",
+         "end_time":"2020-03-10 10:30:00",
+         "narrations":"fun soccer day.",
+         "media":[
+            {
+               "media_id":1002,
+               "type":"video"
+            }
+         ],
+         "location":{
+            "gps":{
+               "lat":41.00,
+               "lon":110.00
+            },
+            "geo_tag":{
+               "place":"CenturyLink Park",
+               "city":"Seattle",
+               "state":"Washington",
+               "country":"USA"
+            }
+         },
+         "participant":[
+            {
+               "name":"John",
+               "memory_graph_id":1
+            },
+            {
+               "name":"Jane",
+               "memory_graph_id":3
+            }
+         ],
+         "activity":[
+            {
+               "activity_name":"soccer"
+            }
+         ],
+         "object":[
+            
+         ]
+      },      
+      {
+         "memory_id":4,
+         "time":"2020-05-10 10:00:00",
+         "start_time":"2020-05-10 10:00:00",
+         "end_time":"2020-05-10 10:30:00",
+         "narrations":"fun skiing day.",
+         "media":[
+            {
+               "media_id":1002,
+               "type":"video"
+            }
+         ],
+         "location":{
+            "gps":{
+               "lat":45.00,
+               "lon":115.00
+            },
+            "geo_tag":{
+               "place":"Stubier",
+               "city":"Innsbruck",
+               "state":"",
+               "country":"Austria"
+            }
+         },
+         "participant":[
+            {
+               "name":"Jane",
+               "memory_graph_id":3
+            }
+         ],
+         "activity":[
+            {
+               "activity_name":"skiing"
+            },
+            {
+               "activity_name":"hiking"
+            }
+         ],
+         "object":[
+            
+         ]
+      }      
+   ]
+}
