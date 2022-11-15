@@ -10,11 +10,13 @@ Seungwhan Moon\*, Satwik Kottur\*, Alborz Geramifard, Babak Damavandi
 
 ### Abstract
 
+<figure>
 <img src="./teaser_memory_dialog.png"
      alt="Teaser Figure"
      width="350px",
      style="float: left; margin-right: 10px;" 
  />
+</figure> 
 
 
 Recent years have seen an increasing trend in the volume of personal media captured by users, thanks 
